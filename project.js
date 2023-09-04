@@ -8,6 +8,25 @@
 
 const propmt = require("prompt-sync")();
 
+const ROWS = 3;
+const COLS = 3;
+
+const SYMBOLS_COUNT = {
+    A : 2,
+    B : 4,
+    C : 6,
+    D : 8
+}
+
+const SYMBOLS_VALUE = {
+    A : 5,
+    B : 4,
+    C : 3,
+    D : 2
+}
+
+
+
 const deposit = () => {
     while (true){
     const despositAmount = propmt("Enter a desposit Amount: ") 
@@ -48,7 +67,9 @@ const getBet = (balance, lines) => {
         return numberOfLines;
     }
 }
-}
+};
+
+const
 
 let balance = deposit();
 const numberOfLines = getNumberOfLines();
